@@ -29,7 +29,7 @@
                         <viewLayoutGuide key="safeArea" id="RJt-wn-BdS"/>
                     </view>
                     <connections>
-                        <outlet property="sceneView" destination="juB-6w-DDP" id="i2Y-rm-uO3"/>
+                        <outlet property="sceneView" destination="juB-6w-DDP" id="qRD-su-CNT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IJ7-a9-aLA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

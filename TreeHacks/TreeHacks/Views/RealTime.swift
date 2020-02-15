@@ -23,12 +23,12 @@ struct RealTime_Previews: PreviewProvider {
 }
 
 struct ViewControllerWrapper: UIViewControllerRepresentable {
-
-    typealias UIViewControllerType = ARViewController
+ 
+    typealias UIViewControllerType = ViewController
 
 
     func makeUIViewController(context: UIViewControllerRepresentableContext<ViewControllerWrapper>) -> ViewControllerWrapper.UIViewControllerType {
-        return ARViewController()
+        return ViewController()
     }
 
     func updateUIViewController(_ uiViewController: ViewControllerWrapper.UIViewControllerType, context: UIViewControllerRepresentableContext<ViewControllerWrapper>) {

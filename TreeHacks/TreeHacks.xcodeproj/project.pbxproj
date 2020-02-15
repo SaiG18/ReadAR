@@ -11,7 +11,6 @@
 		31ED37AA23F7E3DF008144D8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31ED37A923F7E3DF008144D8 /* SceneDelegate.swift */; };
 		31ED37AC23F7E3DF008144D8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31ED37AB23F7E3DF008144D8 /* ContentView.swift */; };
 		31ED37AE23F7E3E0008144D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31ED37AD23F7E3E0008144D8 /* Assets.xcassets */; };
-		31ED37B123F7E3E0008144D8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31ED37B023F7E3E0008144D8 /* Preview Assets.xcassets */; };
 		31ED37B423F7E3E0008144D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31ED37B223F7E3E0008144D8 /* LaunchScreen.storyboard */; };
 		31ED37BC23F7E870008144D8 /* FontTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31ED37BB23F7E870008144D8 /* FontTester.swift */; };
 		31ED37BF23F7E942008144D8 /* Dyslexie-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 31ED37BE23F7E942008144D8 /* Dyslexie-Regular.ttf */; };
@@ -21,9 +20,10 @@
 		31ED37C823F7F0AD008144D8 /* Recs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31ED37C723F7F0AD008144D8 /* Recs.swift */; };
 		C260F96923F7F8FA00497613 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = C260F96823F7F8FA00497613 /* Card.swift */; };
 		C260F96B23F8186200497613 /* VideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C260F96A23F8186200497613 /* VideoPlayer.swift */; };
-		C2A610E123F84F1E00A96EA3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2A610E023F84F1E00A96EA3 /* Default-568h@2x.png */; };
-		C2A6110323F86E2600A96EA3 /* ARView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2A6110223F86E2600A96EA3 /* ARView.storyboard */; };
-		C2A6110523F86E4C00A96EA3 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A6110423F86E4C00A96EA3 /* ARViewController.swift */; };
+		C2A6110523F86E4C00A96EA3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A6110423F86E4C00A96EA3 /* ViewController.swift */; };
+		C2A6110823F895E200A96EA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2A6110623F895E200A96EA3 /* Main.storyboard */; };
+		C2A6110F23F89B4600A96EA3 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = C2A6110E23F89B4600A96EA3 /* art.scnassets */; };
+		C2A6111123F89B5900A96EA3 /* Lowpoly_tree_sample.dae in Resources */ = {isa = PBXBuildFile; fileRef = C2A6111023F89B5900A96EA3 /* Lowpoly_tree_sample.dae */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +32,6 @@
 		31ED37A923F7E3DF008144D8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		31ED37AB23F7E3DF008144D8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		31ED37AD23F7E3E0008144D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		31ED37B023F7E3E0008144D8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		31ED37B323F7E3E0008144D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		31ED37B523F7E3E0008144D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31ED37BB23F7E870008144D8 /* FontTester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontTester.swift; sourceTree = "<group>"; };
@@ -43,9 +42,10 @@
 		31ED37C723F7F0AD008144D8 /* Recs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recs.swift; sourceTree = "<group>"; };
 		C260F96823F7F8FA00497613 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		C260F96A23F8186200497613 /* VideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayer.swift; sourceTree = "<group>"; };
-		C2A610E023F84F1E00A96EA3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		C2A6110223F86E2600A96EA3 /* ARView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ARView.storyboard; sourceTree = "<group>"; };
-		C2A6110423F86E4C00A96EA3 /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
+		C2A6110423F86E4C00A96EA3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C2A6110723F895E200A96EA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../../../../Downloads/hackpack-arkit-master/hackpack-arkit/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
+		C2A6110E23F89B4600A96EA3 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; name = art.scnassets; path = "../../../../../Downloads/hackpack-arkit-master/hackpack-arkit/art.scnassets"; sourceTree = "<group>"; };
+		C2A6111023F89B5900A96EA3 /* Lowpoly_tree_sample.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; name = Lowpoly_tree_sample.dae; path = "../../../../../Downloads/hackpack-arkit-master/hackpack-arkit/art.scnassets/Lowpoly_tree_sample.dae"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +62,6 @@
 		31ED379B23F7E3DF008144D8 = {
 			isa = PBXGroup;
 			children = (
-				C2A610E023F84F1E00A96EA3 /* Default-568h@2x.png */,
 				31ED37A623F7E3DF008144D8 /* TreeHacks */,
 				31ED37A523F7E3DF008144D8 /* Products */,
 			);
@@ -79,6 +78,8 @@
 		31ED37A623F7E3DF008144D8 /* TreeHacks */ = {
 			isa = PBXGroup;
 			children = (
+				C2A6110E23F89B4600A96EA3 /* art.scnassets */,
+				C2A6111023F89B5900A96EA3 /* Lowpoly_tree_sample.dae */,
 				31ED37C223F7F010008144D8 /* Views */,
 				31ED37BD23F7E931008144D8 /* Resources */,
 				31ED37A723F7E3DF008144D8 /* AppDelegate.swift */,
@@ -87,18 +88,9 @@
 				31ED37AD23F7E3E0008144D8 /* Assets.xcassets */,
 				31ED37B223F7E3E0008144D8 /* LaunchScreen.storyboard */,
 				31ED37B523F7E3E0008144D8 /* Info.plist */,
-				31ED37AF23F7E3E0008144D8 /* Preview Content */,
 				31ED37BB23F7E870008144D8 /* FontTester.swift */,
 			);
 			path = TreeHacks;
-			sourceTree = "<group>";
-		};
-		31ED37AF23F7E3E0008144D8 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				31ED37B023F7E3E0008144D8 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		31ED37BD23F7E931008144D8 /* Resources */ = {
@@ -118,8 +110,8 @@
 				31ED37C723F7F0AD008144D8 /* Recs.swift */,
 				C260F96823F7F8FA00497613 /* Card.swift */,
 				C260F96A23F8186200497613 /* VideoPlayer.swift */,
-				C2A6110223F86E2600A96EA3 /* ARView.storyboard */,
-				C2A6110423F86E4C00A96EA3 /* ARViewController.swift */,
+				C2A6110623F895E200A96EA3 /* Main.storyboard */,
+				C2A6110423F86E4C00A96EA3 /* ViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -183,10 +175,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				31ED37B423F7E3E0008144D8 /* LaunchScreen.storyboard in Resources */,
-				31ED37B123F7E3E0008144D8 /* Preview Assets.xcassets in Resources */,
-				C2A6110323F86E2600A96EA3 /* ARView.storyboard in Resources */,
+				C2A6110823F895E200A96EA3 /* Main.storyboard in Resources */,
+				C2A6110F23F89B4600A96EA3 /* art.scnassets in Resources */,
+				C2A6111123F89B5900A96EA3 /* Lowpoly_tree_sample.dae in Resources */,
 				31ED37BF23F7E942008144D8 /* Dyslexie-Regular.ttf in Resources */,
-				C2A610E123F84F1E00A96EA3 /* Default-568h@2x.png in Resources */,
 				31ED37AE23F7E3E0008144D8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -208,7 +200,7 @@
 				31ED37C423F7F038008144D8 /* Home.swift in Sources */,
 				31ED37AC23F7E3DF008144D8 /* ContentView.swift in Sources */,
 				31ED37C623F7F095008144D8 /* Search.swift in Sources */,
-				C2A6110523F86E4C00A96EA3 /* ARViewController.swift in Sources */,
+				C2A6110523F86E4C00A96EA3 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +213,14 @@
 				31ED37B323F7E3E0008144D8 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C2A6110623F895E200A96EA3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C2A6110723F895E200A96EA3 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -345,7 +345,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"TreeHacks/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = HFZ6ZZH4S3;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = TreeHacks/Info.plist;
@@ -365,7 +365,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"TreeHacks/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = HFZ6ZZH4S3;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = TreeHacks/Info.plist;
