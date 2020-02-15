@@ -7,10 +7,12 @@
 //
 
 import SwiftUI
+import ARKit
+import SceneKit
 
 struct RealTime: View {
     var body: some View {
-        Text("Hello World!")
+        ViewControllerWrapper()
     }
 }
 
@@ -19,3 +21,19 @@ struct RealTime_Previews: PreviewProvider {
         RealTime()
     }
 }
+
+struct ViewControllerWrapper: UIViewControllerRepresentable {
+
+    typealias UIViewControllerType = ARViewController
+
+
+    func makeUIViewController(context: UIViewControllerRepresentableContext<ViewControllerWrapper>) -> ViewControllerWrapper.UIViewControllerType {
+        return ARViewController()
+    }
+
+    func updateUIViewController(_ uiViewController: ViewControllerWrapper.UIViewControllerType, context: UIViewControllerRepresentableContext<ViewControllerWrapper>) {
+        //
+    }
+}
+
+

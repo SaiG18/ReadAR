@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="WmX-dr-W8J">
+            <objects>
+                <viewController id="gpI-fl-2rv" customClass="ARViewController" customModule="TreeHacks" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gof-4B-liX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" wantsMultisampling="YES" translatesAutoresizingMaskIntoConstraints="NO" id="juB-6w-DDP" customClass="ARSCNView">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </sceneKitView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="RJt-wn-BdS" firstAttribute="trailing" secondItem="juB-6w-DDP" secondAttribute="trailing" id="3zB-5t-MPd"/>
+                            <constraint firstItem="juB-6w-DDP" firstAttribute="top" secondItem="RJt-wn-BdS" secondAttribute="top" id="gPe-Ru-TaC"/>
+                            <constraint firstItem="RJt-wn-BdS" firstAttribute="bottom" secondItem="juB-6w-DDP" secondAttribute="bottom" id="pjR-8d-hlU"/>
+                            <constraint firstItem="juB-6w-DDP" firstAttribute="leading" secondItem="RJt-wn-BdS" secondAttribute="leading" id="pwW-fR-XeW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RJt-wn-BdS"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="juB-6w-DDP" id="i2Y-rm-uO3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IJ7-a9-aLA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="55" y="98"/>
+        </scene>
+    </scenes>
+</document>

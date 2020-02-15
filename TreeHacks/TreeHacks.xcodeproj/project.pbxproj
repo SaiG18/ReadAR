@@ -22,6 +22,8 @@
 		C260F96923F7F8FA00497613 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = C260F96823F7F8FA00497613 /* Card.swift */; };
 		C260F96B23F8186200497613 /* VideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C260F96A23F8186200497613 /* VideoPlayer.swift */; };
 		C2A610E123F84F1E00A96EA3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2A610E023F84F1E00A96EA3 /* Default-568h@2x.png */; };
+		C2A6110323F86E2600A96EA3 /* ARView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2A6110223F86E2600A96EA3 /* ARView.storyboard */; };
+		C2A6110523F86E4C00A96EA3 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A6110423F86E4C00A96EA3 /* ARViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		C260F96823F7F8FA00497613 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		C260F96A23F8186200497613 /* VideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayer.swift; sourceTree = "<group>"; };
 		C2A610E023F84F1E00A96EA3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		C2A6110223F86E2600A96EA3 /* ARView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ARView.storyboard; sourceTree = "<group>"; };
+		C2A6110423F86E4C00A96EA3 /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +118,8 @@
 				31ED37C723F7F0AD008144D8 /* Recs.swift */,
 				C260F96823F7F8FA00497613 /* Card.swift */,
 				C260F96A23F8186200497613 /* VideoPlayer.swift */,
+				C2A6110223F86E2600A96EA3 /* ARView.storyboard */,
+				C2A6110423F86E4C00A96EA3 /* ARViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -178,6 +184,7 @@
 			files = (
 				31ED37B423F7E3E0008144D8 /* LaunchScreen.storyboard in Resources */,
 				31ED37B123F7E3E0008144D8 /* Preview Assets.xcassets in Resources */,
+				C2A6110323F86E2600A96EA3 /* ARView.storyboard in Resources */,
 				31ED37BF23F7E942008144D8 /* Dyslexie-Regular.ttf in Resources */,
 				C2A610E123F84F1E00A96EA3 /* Default-568h@2x.png in Resources */,
 				31ED37AE23F7E3E0008144D8 /* Assets.xcassets in Resources */,
@@ -201,6 +208,7 @@
 				31ED37C423F7F038008144D8 /* Home.swift in Sources */,
 				31ED37AC23F7E3DF008144D8 /* ContentView.swift in Sources */,
 				31ED37C623F7F095008144D8 /* Search.swift in Sources */,
+				C2A6110523F86E4C00A96EA3 /* ARViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
