@@ -13,6 +13,7 @@
 		31ED37AE23F7E3E0008144D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31ED37AD23F7E3E0008144D8 /* Assets.xcassets */; };
 		31ED37B123F7E3E0008144D8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31ED37B023F7E3E0008144D8 /* Preview Assets.xcassets */; };
 		31ED37B423F7E3E0008144D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31ED37B223F7E3E0008144D8 /* LaunchScreen.storyboard */; };
+		C260F96723F7EDCA00497613 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = C260F96623F7EDCA00497613 /* Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		31ED37B023F7E3E0008144D8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		31ED37B323F7E3E0008144D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		31ED37B523F7E3E0008144D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C260F96623F7EDCA00497613 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				31ED37A723F7E3DF008144D8 /* AppDelegate.swift */,
 				31ED37A923F7E3DF008144D8 /* SceneDelegate.swift */,
 				31ED37AB23F7E3DF008144D8 /* ContentView.swift */,
+				C260F96623F7EDCA00497613 /* Home.swift */,
 				31ED37AD23F7E3E0008144D8 /* Assets.xcassets */,
 				31ED37B223F7E3E0008144D8 /* LaunchScreen.storyboard */,
 				31ED37B523F7E3E0008144D8 /* Info.plist */,
@@ -148,6 +151,7 @@
 			files = (
 				31ED37A823F7E3DF008144D8 /* AppDelegate.swift in Sources */,
 				31ED37AA23F7E3DF008144D8 /* SceneDelegate.swift in Sources */,
+				C260F96723F7EDCA00497613 /* Home.swift in Sources */,
 				31ED37AC23F7E3DF008144D8 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

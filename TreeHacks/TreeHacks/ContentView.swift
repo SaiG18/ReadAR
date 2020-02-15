@@ -44,7 +44,7 @@ struct ContentView: View {
             .font(.title)
             .tabItem {
                 VStack {
-                    Image("Fourth")
+                    Image("recommend")
                     Text("Recommended")
                 }
             }
