@@ -12,15 +12,15 @@ struct Recs: View {
     var body: some View {
         VStack {
             HStack {
-                Card(image: "river_bank", category: "Card", heading: "Bank", author: "test")
+                Card(image: "river_bank", category: "Card", heading: "Bank", author: "test", videoUrlString: "https://www.youtube.com/watch?v=HobxLbPhrMc")
                 
-                Card(image: "river_bank", category: "Card", heading: "Bank", author: "test")
+                Card(image: "river_bank", category: "Card", heading: "Bank", author: "test", videoUrlString: "https://www.youtube.com/watch?v=HobxLbPhrMc")
             }
             
             HStack {
-                Card(image: "river_bank", category: "Card", heading: "Bank", author: "test")
+                Card(image: "river_bank", category: "Card", heading: "Bank", author: "test", videoUrlString: "https://www.youtube.com/watch?v=HobxLbPhrMc")
                 
-                Card(image: "river_bank", category: "Card", heading: "Bank", author: "test")
+                Card(image: "river_bank", category: "Card", heading: "Bank", author: "test", videoUrlString: "https://www.youtube.com/watch?v=HobxLbPhrMc")
             }
         }
         .padding(.bottom, 260)

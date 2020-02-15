@@ -9,19 +9,18 @@
 import SwiftUI
 
 struct VideoPlayer: View {
-    var title:String
-    var description: String
+    var urlString:String
     
     @State var hideVideo = false
 
     
     var body: some View {
-            Webview(url: "https://www.google.com/search?q=Using+UIWebView+in+swift+UI+to+play+a+youttube+video&oq=Using+UIWebView+in+swift+UI+to+play+a+youttube+video&aqs=chrome..69i57.11427j1j1&sourceid=chrome&ie=UTF-8#kpvalbx=_WklIXq-IH8bL0PEP1Z-I8Ao23")
+            Webview(url: urlString)
     }
 }
 
 struct VideoPlayer_Previews: PreviewProvider {
     static var previews: some View {
-        VideoPlayer(title: "Test", description: "Desc")
+        VideoPlayer(urlString: "https://www.youtube.com/watch?v=HobxLbPhrMc")
     }
 }

@@ -13,6 +13,7 @@ struct Card: View {
     var category: String
     var heading: String
     var author: String
+    var videoUrlString: String
     
     @State var showVideo = false
 
@@ -47,7 +48,7 @@ struct Card: View {
              self.showVideo = true
             }
            .sheet(isPresented: $showVideo) {
-            VideoPlayer(title: self.heading, description: self.category)
+            VideoPlayer(urlString: self.videoUrlString)
            }
         .cornerRadius(10)
         .overlay(
@@ -60,6 +61,6 @@ struct Card: View {
 
 struct Card_Previews: PreviewProvider {
     static var previews: some View {
-        Card(image: "river_bank", category: "Test", heading: "Title", author: "Sophie")
+        Card(image: "river_bank", category: "Test", heading: "Title", author: "Sophie", videoUrlString: "https://www.youtube.com/watch?v=HobxLbPhrMc")
     }
 }
