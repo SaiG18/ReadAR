@@ -10,7 +10,14 @@ import SwiftUI
 
 struct Search: View {
     var body: some View {
-        Text("Search")
+        TextField("Search", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+            .textFieldStyle(RoundedBorderTextFieldStyle())
+            .padding()
+            .cornerRadius(25)
+        .position(x: 185, y: 20)
+
+
+
     }
 }
 
