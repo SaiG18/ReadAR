@@ -12,7 +12,23 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     var treeNode: SCNNode?
     var sceneView: ARSCNView!
     
-//    @IBOutlet var sceneView: ARSCNView!
+    @objc func handleTap(_ gestureRecognize: UIGestureRecognizer) {
+        // retrieve the SCNView
+        let sceneView = self.sceneView as! SCNView
+
+        // check what nodes are tapped
+        let p = gestureRecognize.location(in: sceneView)
+        let hitResults = sceneView.hitTest(p, options: [:])
+        // check that we clicked on at least one object
+        if hitResults.count > 0 {
+            // retrieved the first clicked object
+            let result: SCNHitTestResult = hitResults[0]
+
+            print(result.node.name!)
+            print("x: \(p.x) y: \(p.y)") // <--- THIS IS WHERE I PRINT THE COORDINATES
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -31,15 +47,17 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         // Show statistics such as fps and timing information
         sceneView.showsStatistics = false
-        
+                
         // Create a new scene
-        
         let scene = SCNScene(named: "../art.scnassets/Lowpoly_tree_sample")!
         self.treeNode = scene.rootNode.childNode(withName: "Tree_lp_11", recursively: true)
         self.treeNode?.position = SCNVector3Make(0, 0, -1)
         
         // Set the scene to the view
         sceneView.scene = scene
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
+        sceneView.addGestureRecognizer(tapGesture)
     }
     
     override func viewWillAppear(_ animated: Bool) {
