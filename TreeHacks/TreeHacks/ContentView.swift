@@ -23,12 +23,12 @@ struct ContentView: View {
                     Image("ar")
                     Text("Live")
             }
-            RealTime()
+            Search()
             .tabItem {
                     Image("search")
                     Text("Search")
             }
-            RealTime()
+            Recs()
             .tabItem {
                     Image("recc")
                     Text("Reccs")
