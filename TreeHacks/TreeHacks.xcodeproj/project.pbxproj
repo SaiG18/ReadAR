@@ -14,6 +14,7 @@
 		31ED37B123F7E3E0008144D8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31ED37B023F7E3E0008144D8 /* Preview Assets.xcassets */; };
 		31ED37B423F7E3E0008144D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31ED37B223F7E3E0008144D8 /* LaunchScreen.storyboard */; };
 		31ED37BC23F7E870008144D8 /* FontTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31ED37BB23F7E870008144D8 /* FontTester.swift */; };
+		31ED37BF23F7E942008144D8 /* Dyslexie-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 31ED37BE23F7E942008144D8 /* Dyslexie-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		31ED37B323F7E3E0008144D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		31ED37B523F7E3E0008144D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31ED37BB23F7E870008144D8 /* FontTester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontTester.swift; sourceTree = "<group>"; };
+		31ED37BE23F7E942008144D8 /* Dyslexie-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dyslexie-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		31ED37A623F7E3DF008144D8 /* TreeHacks */ = {
 			isa = PBXGroup;
 			children = (
+				31ED37BD23F7E931008144D8 /* Resources */,
 				31ED37A723F7E3DF008144D8 /* AppDelegate.swift */,
 				31ED37A923F7E3DF008144D8 /* SceneDelegate.swift */,
 				31ED37AB23F7E3DF008144D8 /* ContentView.swift */,
@@ -76,6 +79,14 @@
 				31ED37B023F7E3E0008144D8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		31ED37BD23F7E931008144D8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				31ED37BE23F7E942008144D8 /* Dyslexie-Regular.ttf */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +149,7 @@
 			files = (
 				31ED37B423F7E3E0008144D8 /* LaunchScreen.storyboard in Resources */,
 				31ED37B123F7E3E0008144D8 /* Preview Assets.xcassets in Resources */,
+				31ED37BF23F7E942008144D8 /* Dyslexie-Regular.ttf in Resources */,
 				31ED37AE23F7E3E0008144D8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
