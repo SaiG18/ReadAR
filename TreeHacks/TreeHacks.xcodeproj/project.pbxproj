@@ -13,6 +13,7 @@
 		31ED37AE23F7E3E0008144D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31ED37AD23F7E3E0008144D8 /* Assets.xcassets */; };
 		31ED37B123F7E3E0008144D8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31ED37B023F7E3E0008144D8 /* Preview Assets.xcassets */; };
 		31ED37B423F7E3E0008144D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31ED37B223F7E3E0008144D8 /* LaunchScreen.storyboard */; };
+		31ED37BC23F7E870008144D8 /* FontTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31ED37BB23F7E870008144D8 /* FontTester.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		31ED37B023F7E3E0008144D8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		31ED37B323F7E3E0008144D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		31ED37B523F7E3E0008144D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31ED37BB23F7E870008144D8 /* FontTester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontTester.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				31ED37B223F7E3E0008144D8 /* LaunchScreen.storyboard */,
 				31ED37B523F7E3E0008144D8 /* Info.plist */,
 				31ED37AF23F7E3E0008144D8 /* Preview Content */,
+				31ED37BB23F7E870008144D8 /* FontTester.swift */,
 			);
 			path = TreeHacks;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				31ED37A823F7E3DF008144D8 /* AppDelegate.swift in Sources */,
+				31ED37BC23F7E870008144D8 /* FontTester.swift in Sources */,
 				31ED37AA23F7E3DF008144D8 /* SceneDelegate.swift in Sources */,
 				31ED37AC23F7E3DF008144D8 /* ContentView.swift in Sources */,
 			);
