@@ -26,6 +26,23 @@ class ViewController: UIViewController, ARSCNViewDelegate {
 
             print(result.node.name!)
             print("x: \(p.x) y: \(p.y)") // <--- THIS IS WHERE I PRINT THE COORDINATES
+            
+            // Render text
+            let text = SCNText(string: "Dyslexia friendly term", extrusionDepth: 1)
+            let material = SCNMaterial()
+            
+            material.diffuse.contents = UIColor.black
+            
+            text.materials = [material]
+            
+            let node = SCNNode()
+            
+            node.position = SCNVector3((result.node.position.x), (result.node.position.y), -0.1)
+            node.scale = SCNVector3(0.01, 0.01, 0.01)
+            node.geometry = text
+            
+            sceneView.scene!.rootNode.addChildNode(node)
+            sceneView.autoenablesDefaultLighting = true
         }
     }
     
