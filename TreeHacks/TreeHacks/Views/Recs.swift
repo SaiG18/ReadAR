@@ -25,7 +25,7 @@ struct Recs: View {
             
             
         }
-        .padding(.bottom, 250)
+        .padding(.bottom, 260)
     }
 }
 
