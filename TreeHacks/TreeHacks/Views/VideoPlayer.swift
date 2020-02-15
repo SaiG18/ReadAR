@@ -19,7 +19,9 @@ struct VideoPlayer: View {
     var body: some View {
         VStack{
             Text(title)
-                .font(.largeTitle)
+                .font(.title)
+                .fontWeight(.semibold)
+                .lineLimit(nil)
             player().frame(height: UIScreen.main.bounds.height / 3)
             Spacer()
             Text(description)

@@ -46,6 +46,7 @@ struct ContentView: View {
                 .tabItem {
                     Image("ar")
                     Text("Live View")
+
                 }
             Search()
                 .tabItem {
