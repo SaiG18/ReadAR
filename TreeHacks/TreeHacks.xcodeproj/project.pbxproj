@@ -20,6 +20,7 @@
 		31ED37C623F7F095008144D8 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31ED37C523F7F095008144D8 /* Search.swift */; };
 		31ED37C823F7F0AD008144D8 /* Recs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31ED37C723F7F0AD008144D8 /* Recs.swift */; };
 		C260F96923F7F8FA00497613 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = C260F96823F7F8FA00497613 /* Card.swift */; };
+		C260F96B23F8186200497613 /* VideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C260F96A23F8186200497613 /* VideoPlayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		31ED37C523F7F095008144D8 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		31ED37C723F7F0AD008144D8 /* Recs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recs.swift; sourceTree = "<group>"; };
 		C260F96823F7F8FA00497613 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		C260F96A23F8186200497613 /* VideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				31ED37C523F7F095008144D8 /* Search.swift */,
 				31ED37C723F7F0AD008144D8 /* Recs.swift */,
 				C260F96823F7F8FA00497613 /* Card.swift */,
+				C260F96A23F8186200497613 /* VideoPlayer.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 				31ED37C823F7F0AD008144D8 /* Recs.swift in Sources */,
 				31ED37BC23F7E870008144D8 /* FontTester.swift in Sources */,
 				31ED37AA23F7E3DF008144D8 /* SceneDelegate.swift in Sources */,
+				C260F96B23F8186200497613 /* VideoPlayer.swift in Sources */,
 				31ED37C423F7F038008144D8 /* Home.swift in Sources */,
 				31ED37AC23F7E3DF008144D8 /* ContentView.swift in Sources */,
 				31ED37C623F7F095008144D8 /* Search.swift in Sources */,
@@ -330,14 +334,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"TreeHacks/Preview Content\"";
-				DEVELOPMENT_TEAM = H93XLMXW8P;
+				DEVELOPMENT_TEAM = HFZ6ZZH4S3;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = TreeHacks/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.saigurrapu.TreeHacks;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sophie.TreeHacks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -350,14 +354,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"TreeHacks/Preview Content\"";
-				DEVELOPMENT_TEAM = H93XLMXW8P;
+				DEVELOPMENT_TEAM = HFZ6ZZH4S3;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = TreeHacks/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.saigurrapu.TreeHacks;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sophie.TreeHacks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
