@@ -20,6 +20,7 @@
 		31ED37C823F7F0AD008144D8 /* Recs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31ED37C723F7F0AD008144D8 /* Recs.swift */; };
 		C260F96923F7F8FA00497613 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = C260F96823F7F8FA00497613 /* Card.swift */; };
 		C260F96B23F8186200497613 /* VideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C260F96A23F8186200497613 /* VideoPlayer.swift */; };
+		C28B60E423F8A39000A3D899 /* Webview.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28B60E323F8A39000A3D899 /* Webview.swift */; };
 		C2A6110523F86E4C00A96EA3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A6110423F86E4C00A96EA3 /* ViewController.swift */; };
 		C2A6110823F895E200A96EA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2A6110623F895E200A96EA3 /* Main.storyboard */; };
 		C2A6110F23F89B4600A96EA3 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = C2A6110E23F89B4600A96EA3 /* art.scnassets */; };
@@ -41,6 +42,7 @@
 		31ED37C723F7F0AD008144D8 /* Recs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recs.swift; sourceTree = "<group>"; };
 		C260F96823F7F8FA00497613 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		C260F96A23F8186200497613 /* VideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayer.swift; sourceTree = "<group>"; };
+		C28B60E323F8A39000A3D899 /* Webview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webview.swift; sourceTree = "<group>"; };
 		C2A6110423F86E4C00A96EA3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C2A6110723F895E200A96EA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../../../../Downloads/hackpack-arkit-master/hackpack-arkit/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
 		C2A6110E23F89B4600A96EA3 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; name = art.scnassets; path = "../../../../../Downloads/hackpack-arkit-master/hackpack-arkit/art.scnassets"; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				C260F96A23F8186200497613 /* VideoPlayer.swift */,
 				C2A6110623F895E200A96EA3 /* Main.storyboard */,
 				C2A6110423F86E4C00A96EA3 /* ViewController.swift */,
+				C28B60E323F8A39000A3D899 /* Webview.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 				C260F96B23F8186200497613 /* VideoPlayer.swift in Sources */,
 				31ED37C423F7F038008144D8 /* Home.swift in Sources */,
 				31ED37AC23F7E3DF008144D8 /* ContentView.swift in Sources */,
+				C28B60E423F8A39000A3D899 /* Webview.swift in Sources */,
 				31ED37C623F7F095008144D8 /* Search.swift in Sources */,
 				C2A6110523F86E4C00A96EA3 /* ViewController.swift in Sources */,
 			);

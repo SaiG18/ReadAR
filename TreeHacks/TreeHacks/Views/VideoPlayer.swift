@@ -7,7 +7,6 @@
 //
 
 import SwiftUI
-import AVKit
 
 struct VideoPlayer: View {
     var title:String
@@ -17,38 +16,12 @@ struct VideoPlayer: View {
 
     
     var body: some View {
-        VStack{
-            Text(title)
-                .font(.title)
-                .fontWeight(.semibold)
-                .lineLimit(nil)
-            player().frame(height: UIScreen.main.bounds.height / 3)
-            Spacer()
-            Text(description)
-                .font(.system(.body))
-            Spacer()
-        }
+            Webview(url: "https://www.google.com/search?q=Using+UIWebView+in+swift+UI+to+play+a+youttube+video&oq=Using+UIWebView+in+swift+UI+to+play+a+youttube+video&aqs=chrome..69i57.11427j1j1&sourceid=chrome&ie=UTF-8#kpvalbx=_WklIXq-IH8bL0PEP1Z-I8Ao23")
     }
 }
 
 struct VideoPlayer_Previews: PreviewProvider {
     static var previews: some View {
         VideoPlayer(title: "Test", description: "Desc")
-    }
-}
-
-struct player: UIViewControllerRepresentable {
-    
-    func makeUIViewController(context: UIViewControllerRepresentableContext<player>) -> AVPlayerViewController {
-        
-        let controller = AVPlayerViewController()
-        let url = "https://www.youtube.com/watch?v=lSCztqwZrYo"
-        let player1 = AVPlayer(url: URL(string: url)!)
-        controller.player = player1
-        return controller
-    }
-    
-    func updateUIViewController(_ uiViewController: AVPlayerViewController, context: UIViewControllerRepresentableContext<player>) {
-        
     }
 }
