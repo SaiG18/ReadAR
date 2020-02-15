@@ -12,29 +12,52 @@ struct ContentView: View {
     @State private var selection = 0
  
     var body: some View {
-        TabView(selection: $selection){
-            VideoPlayer()
-            .tabItem {
+//        TabView(selection: $selection){
+//            Home()
+//            .tabItem {
+//                    Image("home")
+//                    Text("Home")
+//            }
+//            RealTime()
+//            .tabItem {
+//                    Image("ar")
+//                    Text("Live")
+//            }
+//            Search()
+//            .tabItem {
+//                    Image("search")
+//                    Text("Search")
+//            }
+//            Recs()
+//            .tabItem {
+//                    Image("recc")
+//                    Text("Reccs")
+//            }
+//
+//        }//End of TabView
+        
+        TabView {
+            Home()
+                .tabItem {
                     Image("home")
                     Text("Home")
-            }
+                }
             RealTime()
-            .tabItem {
+                .tabItem {
                     Image("ar")
-                    Text("Live")
-            }
+                    Text("Live View")
+                }
             Search()
-            .tabItem {
+                .tabItem {
                     Image("search")
                     Text("Search")
-            }
+                }
             Recs()
-            .tabItem {
+                .tabItem {
                     Image("recc")
-                    Text("Reccs")
-            }
-            
-        }//End of TabView
+                    Text("Reccommended")
+                }
+        }
     }//End of Body
 }
 
