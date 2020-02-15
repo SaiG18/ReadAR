@@ -10,7 +10,12 @@ import SwiftUI
 
 struct Home: View {
     var body: some View {
-        Text("Home")
+        Button(action: {
+            print("setings")
+        }) {
+                Text("Settings")
+                    .position(x: 330, y: 10)
+        }
     }
 }
 
