@@ -14,10 +14,7 @@ struct Search: View {
             .textFieldStyle(RoundedBorderTextFieldStyle())
             .padding()
             .cornerRadius(25)
-//        .position(x: 185, y: 20)
-
-
-
+            .position(x: 185, y: 20)
     }
 }
 

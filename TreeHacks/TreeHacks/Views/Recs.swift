@@ -22,8 +22,6 @@ struct Recs: View {
                 
                 Card(image: "river_bank", category: "Card", heading: "Bank", author: "test")
             }
-            
-            
         }
         .padding(.bottom, 260)
     }

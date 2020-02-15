@@ -14,11 +14,17 @@ struct Card: View {
     var heading: String
     var author: String
     
+    @State var showVideo = false
+
+    
     var body: some View {
            VStack {
                Image(image)
                    .resizable()
                    .aspectRatio(contentMode: .fit)
+                   .onTapGesture {
+                    self.showVideo = true
+                   }
             
                HStack {
                    VStack(alignment: .leading) {
@@ -39,6 +45,9 @@ struct Card: View {
                    Spacer()
                }
                .padding()
+           }
+           .sheet(isPresented: $showVideo) {
+                VideoPlayer()
            }
         .cornerRadius(10)
         .overlay(
