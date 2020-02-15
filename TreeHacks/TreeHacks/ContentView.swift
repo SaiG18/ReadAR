@@ -17,17 +17,17 @@ struct ContentView: View {
                 .font(.title)
                 .tabItem {
                     VStack {
-                        Image("second")
-                        Text("Second")
+                        Image("home")
+                        Text("Home")
                     }
                 }
                 .tag(0)
-            Text("Live")
+            Text("Real time")
                 .font(.title)
                 .tabItem {
                     VStack {
-                        Image("second")
-                        Text("Second")
+                        Image("ar")
+                        Text("Real Time")
                     }
                 }
                 .tag(1)
@@ -35,8 +35,8 @@ struct ContentView: View {
             .font(.title)
             .tabItem {
                 VStack {
-                    Image("Third")
-                    Text("Third")
+                    Image("search")
+                    Text("Search")
                 }
             }
             .tag(2)
@@ -45,7 +45,7 @@ struct ContentView: View {
             .tabItem {
                 VStack {
                     Image("Fourth")
-                    Text("Fourth")
+                    Text("Recommended")
                 }
             }
             .tag(3)
