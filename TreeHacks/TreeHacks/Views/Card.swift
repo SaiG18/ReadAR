@@ -47,19 +47,14 @@ struct Card: View {
              self.showVideo = true
             }
            .sheet(isPresented: $showVideo) {
-                NavigationView {
-                    NavigationLink(
-                       destination: VideoPlayer()) {
-                        VideoPlayer()
-                     }
-            }
+            VideoPlayer(title: self.heading, description: self.category)
+           }
         .cornerRadius(10)
         .overlay(
             RoundedRectangle(cornerRadius: 10)
                 .stroke(Color(.sRGB, red: 150/255, green: 150/255, blue: 150/255, opacity: 0.1), lineWidth: 1)
         )
         .padding([.top, .horizontal])
-    }
 }
 }
 

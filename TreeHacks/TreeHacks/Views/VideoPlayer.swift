@@ -10,12 +10,20 @@ import SwiftUI
 import AVKit
 
 struct VideoPlayer: View {
+    var title:String
+    var description: String
+    
     @State var hideVideo = false
 
     
     var body: some View {
         VStack{
+            Text(title)
+                .font(.largeTitle)
             player().frame(height: UIScreen.main.bounds.height / 3)
+            Spacer()
+            Text(description)
+                .font(.system(.body))
             Spacer()
         }
     }
@@ -23,7 +31,7 @@ struct VideoPlayer: View {
 
 struct VideoPlayer_Previews: PreviewProvider {
     static var previews: some View {
-        VideoPlayer()
+        VideoPlayer(title: "Test", description: "Desc")
     }
 }
 
