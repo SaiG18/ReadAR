@@ -13,50 +13,29 @@ struct ContentView: View {
  
     var body: some View {
         TabView(selection: $selection){
-<<<<<<< HEAD
-            Text("Home")
-                .font(.title)
-                .tabItem {
-                    VStack {
-=======
             Home()
             .tabItem {
->>>>>>> 524df9b6bb8d171147461e5171dad85eb5ac7836
-                        Image("first")
-                }
-<<<<<<< HEAD
-                .tag(0)
-            Text("Live")
-                .font(.title)
-                .tabItem {
-                    VStack {
-                        Image("second")
-                        Text("Second")
-                    }
-                }
-                .tag(1)
-            Text("Search")
-            .font(.title)
-            .tabItem {
-                VStack {
-                    Image("Third")
-                    Text("Third")
-                }
+                    Image("home")
+                    Text("Home")
             }
-            .tag(2)
-            Text("Recommended")
-            .font(.title)
+            RealTime()
             .tabItem {
-                VStack {
-                    Image("Fourth")
-                    Text("Fourth")
-                }
+                    Image("ar")
+                    Text("Live")
             }
-            .tag(3)
-=======
->>>>>>> 524df9b6bb8d171147461e5171dad85eb5ac7836
-        }
-    }
+            RealTime()
+            .tabItem {
+                    Image("search")
+                    Text("Search")
+            }
+            RealTime()
+            .tabItem {
+                    Image("recc")
+                    Text("Reccs")
+            }
+            
+        }//End of TabView
+    }//End of Body
 }
 
 struct ContentView_Previews: PreviewProvider {
