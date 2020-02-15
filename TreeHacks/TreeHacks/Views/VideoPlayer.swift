@@ -10,6 +10,9 @@ import SwiftUI
 import AVKit
 
 struct VideoPlayer: View {
+    @State var hideVideo = false
+
+    
     var body: some View {
         VStack{
             player().frame(height: UIScreen.main.bounds.height / 3)

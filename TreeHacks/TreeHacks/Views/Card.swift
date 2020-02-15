@@ -22,9 +22,6 @@ struct Card: View {
                Image(image)
                    .resizable()
                    .aspectRatio(contentMode: .fit)
-                   .onTapGesture {
-                    self.showVideo = true
-                   }
             
                HStack {
                    VStack(alignment: .leading) {
@@ -46,9 +43,16 @@ struct Card: View {
                }
                .padding()
            }
+            .onTapGesture {
+             self.showVideo = true
+            }
            .sheet(isPresented: $showVideo) {
-                VideoPlayer()
-           }
+                NavigationView {
+                    NavigationLink(
+                       destination: VideoPlayer()) {
+                        VideoPlayer()
+                     }
+            }
         .cornerRadius(10)
         .overlay(
             RoundedRectangle(cornerRadius: 10)
@@ -56,6 +60,7 @@ struct Card: View {
         )
         .padding([.top, .horizontal])
     }
+}
 }
 
 struct Card_Previews: PreviewProvider {
