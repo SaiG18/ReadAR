@@ -30,11 +30,11 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         sceneView.delegate = self
         
         // Show statistics such as fps and timing information
-        sceneView.showsStatistics = true
+        sceneView.showsStatistics = false
         
         // Create a new scene
         
-        let scene = SCNScene(named: "../Lowpoly_tree_sample")!
+        let scene = SCNScene(named: "../art.scnassets/Lowpoly_tree_sample")!
         self.treeNode = scene.rootNode.childNode(withName: "Tree_lp_11", recursively: true)
         self.treeNode?.position = SCNVector3Make(0, 0, -1)
         
