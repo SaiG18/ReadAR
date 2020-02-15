@@ -10,7 +10,22 @@ import SwiftUI
 
 struct Recs: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            HStack {
+                Card(image: "river_bank", category: "Card", heading: "Bank", author: "test")
+                
+                Card(image: "river_bank", category: "Card", heading: "Bank", author: "test")
+            }
+            
+            HStack {
+                Card(image: "river_bank", category: "Card", heading: "Bank", author: "test")
+                
+                Card(image: "river_bank", category: "Card", heading: "Bank", author: "test")
+            }
+            
+            
+        }
+        .padding(.bottom, 250)
     }
 }
 
