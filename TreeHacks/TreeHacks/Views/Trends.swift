@@ -24,6 +24,8 @@ struct Trends: View {
                         .imageScale(.small)
                 }
             }
+             .padding(.all, 30)
+            .padding(.bottom, 90)
             .background(/*@START_MENU_TOKEN@*/Color("lightBlue")/*@END_MENU_TOKEN@*/)
         }.edgesIgnoringSafeArea(.all)
         
