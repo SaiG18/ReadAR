@@ -43,6 +43,7 @@ struct Card: View {
                    Spacer()
                }
                .padding()
+               .background(Color.white)
             }
             .onTapGesture {
              self.showVideo = true
@@ -50,11 +51,11 @@ struct Card: View {
            .sheet(isPresented: $showVideo) {
                 VideoPlayer(urlString: self.videoUrlString)
             }
-        .cornerRadius(10)
-        .shadow(radius: 40)
+        .cornerRadius(6)
+        .shadow(radius: 15,x: -2.0, y: -2.0)
         .overlay(
             RoundedRectangle(cornerRadius: 10)
-                .stroke(Color(.sRGB, red: 150/255, green: 150/255, blue: 150/255, opacity: 0.1), lineWidth: 1)
+                .stroke(Color.white, lineWidth: 2)
         )
         .padding([.top, .horizontal])
     }

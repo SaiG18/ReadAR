@@ -20,9 +20,13 @@ struct Trends: View {
                     Image(item)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
+                        .padding(.bottom, -30)
+                        .imageScale(.small)
                 }
             }
+            .background(/*@START_MENU_TOKEN@*/Color("lightBlue")/*@END_MENU_TOKEN@*/)
         }.edgesIgnoringSafeArea(.all)
+        
     }
 }
 

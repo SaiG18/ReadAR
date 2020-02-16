@@ -33,6 +33,7 @@ struct Recs: View {
             
         }
         .padding(.bottom, 100)
+        .background(/*@START_MENU_TOKEN@*/Color("lightBlue")/*@END_MENU_TOKEN@*/)
     }
 }
 
