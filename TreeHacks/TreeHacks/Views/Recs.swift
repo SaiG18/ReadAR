@@ -23,7 +23,6 @@ struct Recs: View {
                 Card(image: "Tax", category: "Economics", heading: "Tax", videoUrlString: "https://www.youtube.com/watch?v=9gwTH4Yme8I")
                 
                 Card(image: "Tension", category: "Physics", heading: "Tension", videoUrlString: "https://www.youtube.com/watch?v=_UrfHFEBIpU")
-                
             }
             
             HStack {

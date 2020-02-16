@@ -32,6 +32,9 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             
             // Render text
             let text = SCNText(string: "Dyslexia friendly term", extrusionDepth: 2)
+            let customFont = UIFont(name: "Dyslexie", size: UIFont.systemFontSize)
+
+            text.font = customFont
             let textNode = SCNNode()
             textNode.position = SCNVector3((result.node.position.x)-0.25*(textNode.boundingBox.min.x), (result.node.position.y), -2.0)
             textNode.scale = SCNVector3(0.01, 0.01, 0.01)

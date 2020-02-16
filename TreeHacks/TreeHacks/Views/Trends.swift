@@ -22,7 +22,7 @@ struct Trends: View {
                     .aspectRatio(contentMode: .fit)
                 }
             }
-        }
+        }.edgesIgnoringSafeArea(.all)
     }
 }
 

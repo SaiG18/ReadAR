@@ -28,10 +28,8 @@ struct ContentView: View {
                     Image("recc")
                     Text("Reccommended")
                 }
-    }
-        .edgesIgnoringSafeArea(.top)
-        .background(Color(red: 242/255, green: 244/255, blue: 252/255))
-            
+        }.background(Color(red: 242/255, green: 244/255, blue: 252/255))
+            .edgesIgnoringSafeArea(.top)
     }
 }
 
