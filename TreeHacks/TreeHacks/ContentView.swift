@@ -23,6 +23,11 @@ struct ContentView: View {
                     Image("search")
                     Text("Trends")
                 }
+            QuizCards(category: "Physics", question: "In order for a _____ process.")
+                .tabItem {
+                    Image("search")
+                    Text("Quiz")
+                }
             Recs()
                 .tabItem {
                     Image("recc")
