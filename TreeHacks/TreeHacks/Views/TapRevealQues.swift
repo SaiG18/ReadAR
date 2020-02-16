@@ -18,12 +18,12 @@ struct TapRevealQues: View {
         VStack {
                    HStack {
                        VStack(alignment: .leading) {
-                           Text("Physics")
+                           Text(category)
                                .font(.headline)
                                .foregroundColor(.secondary)
                            Text(question)
-                               .font(Font.system(size: 30))
-                               .fontWeight(.black)
+                               .font(Font.system(size: 22))
+                               .fontWeight(.heavy)
                                .foregroundColor(.primary)
                                .lineLimit(3)
                             TextField("Answer", text: $name)

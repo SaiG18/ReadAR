@@ -23,7 +23,7 @@ struct QuizCards: View {
             .padding(.leading, 30)
             .padding(.trailing, 30)
             VStack{
-                TapRevealQues(category: "Physics", question: "What is acceleration?")
+                TapRevealQues(category: "Physics", question: "What is Acceleration?")
                 TapRevealQues(category: "Physics", question: "Units for Velocity?")
                 TapRevealQues(category: "Economics", question: "Who is Keynes?")
                 
