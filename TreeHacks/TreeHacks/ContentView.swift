@@ -21,14 +21,14 @@ struct ContentView: View {
             Trends()
                 .tabItem {
                     Image("search")
-                    Text("Search")
+                    Text("Trends")
                 }
             Recs()
                 .tabItem {
                     Image("recc")
                     Text("Reccommended")
                 }
-        }
+        }.background(Color(red: 242/255, green: 244/255, blue: 252/255))
     }//End of Body
 }
 

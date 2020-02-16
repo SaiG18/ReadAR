@@ -10,11 +10,17 @@ import SwiftUI
 
 struct Trends: View {
     var body: some View {
-        TextField("Search", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
-            .textFieldStyle(RoundedBorderTextFieldStyle())
-            .padding()
-            .cornerRadius(25)
-            .position(x: 185, y: 20)
+        ZStack{
+            Color(red: 242/255, green: 244/255, blue: 252/255)
+            .edgesIgnoringSafeArea(.all)
+            VStack{
+                Text("Hello")
+            }
+        }
+        .edgesIgnoringSafeArea(.all)
+        .navigationBarTitle("")
+        .navigationBarHidden(true)
+        .navigationBarBackButtonHidden(true)
     }
 }
 
