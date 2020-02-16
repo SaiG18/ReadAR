@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var selection = 0
- 
+    var style:UIStatusBarStyle = .default
     var body: some View {
         TabView {
             Home()
@@ -28,8 +28,7 @@ struct ContentView: View {
                     Image("recc")
                     Text("Reccommended")
                 }
-        }.background(Color(red: 242/255, green: 244/255, blue: 252/255))
-            .edgesIgnoringSafeArea(.top)
+        }
     }
 }
 
