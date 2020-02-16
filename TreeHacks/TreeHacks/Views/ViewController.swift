@@ -144,6 +144,9 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate {
                 to: "http://140.238.147.73:8080/api", method: .post , headers: headers)
                 .response { resp in
                     print(resp)
+                    let data:Data = resp.data!
+                    let string = String(data: data, encoding: .utf8)
+                    print(string!)
             }
     }
     
@@ -159,7 +162,11 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate {
     }
     
     func session(_ session: ARSession, didUpdate frame: ARFrame) {
-        print("Called the api!!")
-        apiCall(frame)
+        let randomFloat = Float.random(in: 0..<6)
+        
+        if (randomFloat > 0 && randomFloat < 0.05) {
+            print("Called the api!!")
+            apiCall(frame)
+        }
     }
 }
