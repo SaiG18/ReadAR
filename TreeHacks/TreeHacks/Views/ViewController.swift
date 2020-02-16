@@ -28,20 +28,30 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             print("x: \(p.x) y: \(p.y)") // <--- THIS IS WHERE I PRINT THE COORDINATES
             
             // Render text
-            let text = SCNText(string: "Dyslexia friendly term", extrusionDepth: 1)
-            let material = SCNMaterial()
+            let text = SCNText(string: "Dyslexia friendly term", extrusionDepth: 2)
+            let textNode = SCNNode()
+            textNode.position = SCNVector3((result.node.position.x)-0.25*(textNode.boundingBox.min.x), (result.node.position.y), -2.0)
+            textNode.scale = SCNVector3(0.01, 0.01, 0.01)
+            textNode.geometry = text
             
-            material.diffuse.contents = UIColor.black
-            
-            text.materials = [material]
-            
-            let node = SCNNode()
-            
-            node.position = SCNVector3((result.node.position.x), (result.node.position.y), -0.1)
-            node.scale = SCNVector3(0.01, 0.01, 0.01)
-            node.geometry = text
-            
-            sceneView.scene!.rootNode.addChildNode(node)
+            let minVec = textNode.boundingBox.min
+            let maxVec = textNode.boundingBox.max
+            let bound = SCNVector3Make(maxVec.x - minVec.x,
+                                       maxVec.y - minVec.y,
+                                       maxVec.z - minVec.z);
+
+            let plane = SCNPlane(width: CGFloat(bound.x + 1),
+                                height: CGFloat(bound.y + 1))
+            plane.cornerRadius = 0.2
+            plane.firstMaterial?.diffuse.contents = UIColor.blue.withAlphaComponent(0.9)
+
+            let planeNode = SCNNode(geometry: plane)
+            planeNode.position = SCNVector3(CGFloat( minVec.x) + CGFloat(bound.x) / 2 ,
+                                            CGFloat( minVec.y) + CGFloat(bound.y) / 2,CGFloat(minVec.z - 0.01))
+
+            textNode.addChildNode(planeNode)
+            planeNode.name = "text"
+            sceneView.scene!.rootNode.addChildNode(textNode)
             sceneView.autoenablesDefaultLighting = true
         }
     }
