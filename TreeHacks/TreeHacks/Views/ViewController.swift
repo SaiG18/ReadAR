@@ -13,6 +13,20 @@ import Alamofire
 class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate {
     var treeNode: SCNNode?
     var sceneView: ARSCNView!
+    var count: Double = 0
+    
+    struct Root: Codable {
+        let ocr: [Ocr]
+        let imageUrls: [String]
+    }
+    
+    struct Ocr: Codable {
+        let h: Int
+        let line: String
+        let w: Int
+        let x: Int
+        let y: Int
+    }
     
     @objc func handleTap(_ gestureRecognize: UIGestureRecognizer) {
         // retrieve the SCNView
@@ -29,38 +43,10 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate {
             // retrieved the first clicked object
             let result: SCNHitTestResult = hitResults[0]
 
-            print(result.node.name!)
             print("x: \(p.x) y: \(p.y)") // <--- THIS IS WHERE I PRINT THE COORDINATES
             
             // Render text
-            let text = SCNText(string: "Dyslexia friendly term", extrusionDepth: 2)
-            let customFont = UIFont(name: "Dyslexie", size: UIFont.systemFontSize)
-
-            text.font = customFont
-            let textNode = SCNNode()
-            textNode.position = SCNVector3((result.node.position.x)-0.25*(textNode.boundingBox.min.x), (result.node.position.y), -2.0)
-            textNode.scale = SCNVector3(0.01, 0.01, 0.01)
-            textNode.geometry = text
             
-            let minVec = textNode.boundingBox.min
-            let maxVec = textNode.boundingBox.max
-            let bound = SCNVector3Make(maxVec.x - minVec.x,
-                                       maxVec.y - minVec.y,
-                                       maxVec.z - minVec.z);
-
-            let plane = SCNPlane(width: CGFloat(bound.x + 1),
-                                height: CGFloat(bound.y + 1))
-            plane.cornerRadius = 0.2
-            plane.firstMaterial?.diffuse.contents = UIColor.blue.withAlphaComponent(0.9)
-
-            let planeNode = SCNNode(geometry: plane)
-            planeNode.position = SCNVector3(CGFloat( minVec.x) + CGFloat(bound.x) / 2 ,
-                                            CGFloat( minVec.y) + CGFloat(bound.y) / 2,CGFloat(minVec.z + 0.01))
-
-            textNode.addChildNode(planeNode)
-            planeNode.name = "text"
-            sceneView.scene.rootNode.addChildNode(textNode)
-            sceneView.autoenablesDefaultLighting = true
         }
     }
     
@@ -132,7 +118,8 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate {
         
     }
     
-    func Post(imageOrVideo : UIImage?){
+    func Post(imageOrVideo : UIImage?) {
+        let renderObject: Root
         let headers: HTTPHeaders = [
             /* "Authorization": "your_access_token",  in case you need authorization header */
             "Content-type": "multipart/form-data"
@@ -144,10 +131,79 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate {
                 to: "http://140.238.147.73:8080/api", method: .post , headers: headers)
                 .response { resp in
                     print(resp)
-                    let data:Data = resp.data!
-                    let string = String(data: data, encoding: .utf8)
-                    print(string!)
-            }
+                    
+                    self.count+=0.001
+                    let object = try? self.decode(data: resp.data!)
+                    object?.ocr.forEach { ocr in
+                        let objectText = ocr.line
+                        print(objectText)
+                        let text = SCNText(string: objectText, extrusionDepth: 2)
+                        let customFont = UIFont(name: "Dyslexie", size: UIFont.systemFontSize)
+
+                        text.font = customFont
+                        let textNode = SCNNode()
+                        textNode.position = SCNVector3(Float(0+self.count), 0, Float(-0.2))
+                        let cameraNode = self.sceneView.pointOfView
+                        self.updatePositionAndOrientationOf(textNode, withPosition: textNode.position, relativeTo: cameraNode!)
+                        textNode.scale = SCNVector3(0.001, 0.001, 0.001)
+                        textNode.geometry = text
+                        
+                        let minVec = textNode.boundingBox.min
+                        let maxVec = textNode.boundingBox.max
+                        let bound = SCNVector3Make(maxVec.x - minVec.x,
+                                                   maxVec.y - minVec.y,
+                                                   maxVec.z - minVec.z);
+
+                        let plane = SCNPlane(width: CGFloat(bound.x + 1),
+                                            height: CGFloat(bound.y + 1))
+                        plane.cornerRadius = 0.2
+                        plane.firstMaterial?.diffuse.contents = UIColor.blue.withAlphaComponent(0.9)
+
+                        let planeNode = SCNNode(geometry: plane)
+                        planeNode.position = SCNVector3(CGFloat( minVec.x) + CGFloat(bound.x) / 2 ,
+                                                        CGFloat( minVec.y) + CGFloat(bound.y) / 2,CGFloat(minVec.z + 0.01))
+
+                        textNode.addChildNode(planeNode)
+                        planeNode.name = "text"
+                        self.sceneView.scene.rootNode.addChildNode(textNode)
+                        self.sceneView.autoenablesDefaultLighting = true
+                    }
+                    
+                }
+        }
+    
+    func updatePositionAndOrientationOf(_ node: SCNNode, withPosition position: SCNVector3, relativeTo referenceNode: SCNNode) {
+        let referenceNodeTransform = matrix_float4x4(referenceNode.transform)
+
+        // Setup a translation matrix with the desired position
+        var translationMatrix = matrix_identity_float4x4
+        translationMatrix.columns.3.x = position.x
+        translationMatrix.columns.3.y = position.y
+        translationMatrix.columns.3.z = position.z
+
+        // Combine the configured translation matrix with the referenceNode's transform to get the desired position AND orientation
+        let updatedTransform = matrix_multiply(referenceNodeTransform, translationMatrix)
+        node.transform = SCNMatrix4(updatedTransform)
+    }
+    
+    func decode(data: Data) throws -> Root? {
+        do {
+            let decoder = JSONDecoder()
+            let object = try decoder.decode(Root.self, from: data)
+            return object
+        } catch let error {
+            print(error)
+            return nil
+        }
+    }
+    
+    func dataToJSON(data: Data) -> Any? {
+       do {
+           return try JSONSerialization.jsonObject(with: data, options: .mutableContainers)
+       } catch let myJSONError {
+           print(myJSONError)
+       }
+       return nil
     }
     
     fileprivate func apiCall(_ frame: ARFrame) {
@@ -164,7 +220,7 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate {
     func session(_ session: ARSession, didUpdate frame: ARFrame) {
         let randomFloat = Float.random(in: 0..<6)
         
-        if (randomFloat > 0 && randomFloat < 0.05) {
+        if (randomFloat > 0 && randomFloat < 0.025) {
             print("Called the api!!")
             apiCall(frame)
         }
