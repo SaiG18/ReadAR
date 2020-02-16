@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct Search: View {
+struct Trends: View {
     var body: some View {
         TextField("Search", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
             .textFieldStyle(RoundedBorderTextFieldStyle())
@@ -18,8 +18,8 @@ struct Search: View {
     }
 }
 
-struct Search_Previews: PreviewProvider {
+struct Trends_Previews: PreviewProvider {
     static var previews: some View {
-        Search()
+        Trends()
     }
 }

@@ -17,7 +17,7 @@
 		31ED37BC23F7E870008144D8 /* FontTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31ED37BB23F7E870008144D8 /* FontTester.swift */; };
 		31ED37BF23F7E942008144D8 /* Dyslexie-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 31ED37BE23F7E942008144D8 /* Dyslexie-Regular.ttf */; };
 		31ED37C423F7F038008144D8 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31ED37C323F7F038008144D8 /* Home.swift */; };
-		31ED37C623F7F095008144D8 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31ED37C523F7F095008144D8 /* Search.swift */; };
+		31ED37C623F7F095008144D8 /* Trends.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31ED37C523F7F095008144D8 /* Trends.swift */; };
 		31ED37C823F7F0AD008144D8 /* Recs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31ED37C723F7F0AD008144D8 /* Recs.swift */; };
 		C260F96923F7F8FA00497613 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = C260F96823F7F8FA00497613 /* Card.swift */; };
 		C260F96B23F8186200497613 /* VideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C260F96A23F8186200497613 /* VideoPlayer.swift */; };
@@ -38,7 +38,7 @@
 		31ED37BB23F7E870008144D8 /* FontTester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontTester.swift; sourceTree = "<group>"; };
 		31ED37BE23F7E942008144D8 /* Dyslexie-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dyslexie-Regular.ttf"; sourceTree = "<group>"; };
 		31ED37C323F7F038008144D8 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
-		31ED37C523F7F095008144D8 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
+		31ED37C523F7F095008144D8 /* Trends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trends.swift; sourceTree = "<group>"; };
 		31ED37C723F7F0AD008144D8 /* Recs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recs.swift; sourceTree = "<group>"; };
 		C260F96823F7F8FA00497613 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		C260F96A23F8186200497613 /* VideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayer.swift; sourceTree = "<group>"; };
@@ -102,7 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				31ED37C323F7F038008144D8 /* Home.swift */,
-				31ED37C523F7F095008144D8 /* Search.swift */,
+				31ED37C523F7F095008144D8 /* Trends.swift */,
 				31ED37C723F7F0AD008144D8 /* Recs.swift */,
 				C260F96823F7F8FA00497613 /* Card.swift */,
 				C260F96A23F8186200497613 /* VideoPlayer.swift */,
@@ -195,7 +195,7 @@
 				31ED37C423F7F038008144D8 /* Home.swift in Sources */,
 				31ED37AC23F7E3DF008144D8 /* ContentView.swift in Sources */,
 				C28B60E423F8A39000A3D899 /* Webview.swift in Sources */,
-				31ED37C623F7F095008144D8 /* Search.swift in Sources */,
+				31ED37C623F7F095008144D8 /* Trends.swift in Sources */,
 				C2A6110523F86E4C00A96EA3 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
