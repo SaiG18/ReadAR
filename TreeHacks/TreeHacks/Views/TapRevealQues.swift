@@ -9,21 +9,33 @@
 import SwiftUI
 
 struct TapRevealQues: View {
+    
+    var category: String
+    var question: String
+    @State var name: String = ""
+    
     var body: some View {
         VStack {
                    HStack {
                        VStack(alignment: .leading) {
-                           Text("SwiftUI")
+                           Text("Physics")
                                .font(.headline)
                                .foregroundColor(.secondary)
-                           Text("What is the ")
-                               .font(.title)
+                           Text(question)
+                               .font(Font.system(size: 30))
                                .fontWeight(.black)
                                .foregroundColor(.primary)
                                .lineLimit(3)
+                            TextField("Answer", text: $name)
+                            .padding(.top, 10.0)
+                            .padding(.leading, 50.0)
+                            .padding(.bottom, 10.0)
+                            .foregroundColor(.black)
+                            .border(Color("lighterGray"), width: 4)
+                            .cornerRadius(5.0)
+                            .padding(.bottom, 20.0)
                        }
                        .layoutPriority(100)
-        
                        Spacer()
                    }
                    .padding()
@@ -42,6 +54,6 @@ struct TapRevealQues: View {
 
 struct TapRevealQues_Previews: PreviewProvider {
     static var previews: some View {
-        TapRevealQues()
+        TapRevealQues(category: "Physics", question: "In order for a _____ process.")
     }
 }

@@ -9,6 +9,9 @@
 import SwiftUI
 
 struct QuizCards: View {
+    
+    var category: String
+    var question: String
     var body: some View {
         ScrollView(Axis.Set.vertical, showsIndicators: true) {
             VStack{
@@ -16,10 +19,14 @@ struct QuizCards: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                     .imageScale(.small)
-            }.padding(.all, 30)
-            .padding(.bottom, 90)
+            }.padding(.top, 30)
+            .padding(.leading, 30)
+            .padding(.trailing, 30)
             VStack{
-                TapRevealQues()
+                TapRevealQues(category: "Physics", question: "What is acceleration?")
+                TapRevealQues(category: "Physics", question: "Units for Velocity?")
+                TapRevealQues(category: "Economics", question: "Who is Keynes?")
+                
             }
             
         }.background(/*@START_MENU_TOKEN@*/Color("lightBlue")/*@END_MENU_TOKEN@*/)
@@ -30,6 +37,6 @@ struct QuizCards: View {
 
 struct QuizCards_Previews: PreviewProvider {
     static var previews: some View {
-        QuizCards()
+        QuizCards(category: "Physics", question: "In order for a _____ process.")
     }
 }
