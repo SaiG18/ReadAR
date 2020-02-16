@@ -52,7 +52,7 @@ struct Card: View {
                 VideoPlayer(urlString: self.videoUrlString)
             }
         .cornerRadius(6)
-        .shadow(radius: 15,x: -2.0, y: -2.0)
+        .shadow(radius: 15,x: -10.0, y: -10.0)
         .overlay(
             RoundedRectangle(cornerRadius: 10)
                 .stroke(Color.white, lineWidth: 2)
