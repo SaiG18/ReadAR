@@ -42,12 +42,6 @@ struct ContentView: View {
                     Image("home")
                     Text("Home")
                 }
-            RealTime()
-                .tabItem {
-                    Image("ar")
-                    Text("Live View")
-
-                }
             Search()
                 .tabItem {
                     Image("search")

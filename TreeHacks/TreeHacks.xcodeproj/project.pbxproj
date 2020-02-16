@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3179A17A23F8BA2900678C39 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 3179A17923F8BA2900678C39 /* art.scnassets */; };
+		3179A17C23F8C33500678C39 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3179A17B23F8C33500678C39 /* Profile.swift */; };
 		31ED37A823F7E3DF008144D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31ED37A723F7E3DF008144D8 /* AppDelegate.swift */; };
 		31ED37AA23F7E3DF008144D8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31ED37A923F7E3DF008144D8 /* SceneDelegate.swift */; };
 		31ED37AC23F7E3DF008144D8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31ED37AB23F7E3DF008144D8 /* ContentView.swift */; };
@@ -14,7 +16,6 @@
 		31ED37B423F7E3E0008144D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31ED37B223F7E3E0008144D8 /* LaunchScreen.storyboard */; };
 		31ED37BC23F7E870008144D8 /* FontTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31ED37BB23F7E870008144D8 /* FontTester.swift */; };
 		31ED37BF23F7E942008144D8 /* Dyslexie-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 31ED37BE23F7E942008144D8 /* Dyslexie-Regular.ttf */; };
-		31ED37C123F7EDB4008144D8 /* RealTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31ED37C023F7EDB4008144D8 /* RealTime.swift */; };
 		31ED37C423F7F038008144D8 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31ED37C323F7F038008144D8 /* Home.swift */; };
 		31ED37C623F7F095008144D8 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31ED37C523F7F095008144D8 /* Search.swift */; };
 		31ED37C823F7F0AD008144D8 /* Recs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31ED37C723F7F0AD008144D8 /* Recs.swift */; };
@@ -22,11 +23,11 @@
 		C260F96B23F8186200497613 /* VideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C260F96A23F8186200497613 /* VideoPlayer.swift */; };
 		C28B60E423F8A39000A3D899 /* Webview.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28B60E323F8A39000A3D899 /* Webview.swift */; };
 		C2A6110523F86E4C00A96EA3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A6110423F86E4C00A96EA3 /* ViewController.swift */; };
-		C2A6110823F895E200A96EA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2A6110623F895E200A96EA3 /* Main.storyboard */; };
-		C2A6110F23F89B4600A96EA3 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = C2A6110E23F89B4600A96EA3 /* art.scnassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3179A17923F8BA2900678C39 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		3179A17B23F8C33500678C39 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		31ED37A423F7E3DF008144D8 /* TreeHacks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TreeHacks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31ED37A723F7E3DF008144D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31ED37A923F7E3DF008144D8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,7 +37,6 @@
 		31ED37B523F7E3E0008144D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31ED37BB23F7E870008144D8 /* FontTester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontTester.swift; sourceTree = "<group>"; };
 		31ED37BE23F7E942008144D8 /* Dyslexie-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dyslexie-Regular.ttf"; sourceTree = "<group>"; };
-		31ED37C023F7EDB4008144D8 /* RealTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTime.swift; sourceTree = "<group>"; };
 		31ED37C323F7F038008144D8 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		31ED37C523F7F095008144D8 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		31ED37C723F7F0AD008144D8 /* Recs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recs.swift; sourceTree = "<group>"; };
@@ -44,8 +44,6 @@
 		C260F96A23F8186200497613 /* VideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayer.swift; sourceTree = "<group>"; };
 		C28B60E323F8A39000A3D899 /* Webview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webview.swift; sourceTree = "<group>"; };
 		C2A6110423F86E4C00A96EA3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C2A6110723F895E200A96EA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../../../../Downloads/hackpack-arkit-master/hackpack-arkit/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
-		C2A6110E23F89B4600A96EA3 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; name = art.scnassets; path = "../../../../../Downloads/hackpack-arkit-master/hackpack-arkit/art.scnassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +76,7 @@
 		31ED37A623F7E3DF008144D8 /* TreeHacks */ = {
 			isa = PBXGroup;
 			children = (
-				C2A6110E23F89B4600A96EA3 /* art.scnassets */,
+				3179A17923F8BA2900678C39 /* art.scnassets */,
 				31ED37C223F7F010008144D8 /* Views */,
 				31ED37BD23F7E931008144D8 /* Resources */,
 				31ED37A723F7E3DF008144D8 /* AppDelegate.swift */,
@@ -103,15 +101,14 @@
 		31ED37C223F7F010008144D8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				31ED37C023F7EDB4008144D8 /* RealTime.swift */,
 				31ED37C323F7F038008144D8 /* Home.swift */,
 				31ED37C523F7F095008144D8 /* Search.swift */,
 				31ED37C723F7F0AD008144D8 /* Recs.swift */,
 				C260F96823F7F8FA00497613 /* Card.swift */,
 				C260F96A23F8186200497613 /* VideoPlayer.swift */,
-				C2A6110623F895E200A96EA3 /* Main.storyboard */,
 				C2A6110423F86E4C00A96EA3 /* ViewController.swift */,
 				C28B60E323F8A39000A3D899 /* Webview.swift */,
+				3179A17B23F8C33500678C39 /* Profile.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -175,8 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				31ED37B423F7E3E0008144D8 /* LaunchScreen.storyboard in Resources */,
-				C2A6110823F895E200A96EA3 /* Main.storyboard in Resources */,
-				C2A6110F23F89B4600A96EA3 /* art.scnassets in Resources */,
+				3179A17A23F8BA2900678C39 /* art.scnassets in Resources */,
 				31ED37BF23F7E942008144D8 /* Dyslexie-Regular.ttf in Resources */,
 				31ED37AE23F7E3E0008144D8 /* Assets.xcassets in Resources */,
 			);
@@ -189,9 +185,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31ED37C123F7EDB4008144D8 /* RealTime.swift in Sources */,
 				C260F96923F7F8FA00497613 /* Card.swift in Sources */,
 				31ED37A823F7E3DF008144D8 /* AppDelegate.swift in Sources */,
+				3179A17C23F8C33500678C39 /* Profile.swift in Sources */,
 				31ED37C823F7F0AD008144D8 /* Recs.swift in Sources */,
 				31ED37BC23F7E870008144D8 /* FontTester.swift in Sources */,
 				31ED37AA23F7E3DF008144D8 /* SceneDelegate.swift in Sources */,
@@ -213,14 +209,6 @@
 				31ED37B323F7E3E0008144D8 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		C2A6110623F895E200A96EA3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C2A6110723F895E200A96EA3 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -346,14 +334,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = HFZ6ZZH4S3;
+				DEVELOPMENT_TEAM = H93XLMXW8P;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = TreeHacks/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sophie.TreeHacks;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sai.gurrapu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -366,14 +354,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = HFZ6ZZH4S3;
+				DEVELOPMENT_TEAM = H93XLMXW8P;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = TreeHacks/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sophie.TreeHacks;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sai.gurrapu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
