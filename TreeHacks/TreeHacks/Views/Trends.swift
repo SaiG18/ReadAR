@@ -14,7 +14,10 @@ struct Trends: View {
             Color(red: 242/255, green: 244/255, blue: 252/255)
             .edgesIgnoringSafeArea(.all)
             VStack{
-                Text("Hello")
+                Image("TrendsTop")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .edgesIgnoringSafeArea(.all)
             }
         }
         .edgesIgnoringSafeArea(.all)
