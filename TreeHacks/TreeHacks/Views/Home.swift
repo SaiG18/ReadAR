@@ -10,12 +10,7 @@ import SwiftUI
 
 struct Home: View {
     var body: some View {
-        Button(action: {
-            print("setings")
-        }) {
-                Text("Settings")
-                    .position(x: 330, y: 10)
-        }
+        ViewControllerWrapper()
     }
 }
 
@@ -24,3 +19,18 @@ struct Home_Previews: PreviewProvider {
         Home()
     }
 }
+
+struct ViewControllerWrapper: UIViewControllerRepresentable {
+ 
+    typealias UIViewControllerType = ViewController
+
+
+    func makeUIViewController(context: UIViewControllerRepresentableContext<ViewControllerWrapper>) -> ViewControllerWrapper.UIViewControllerType {
+        return ViewController()
+    }
+
+    func updateUIViewController(_ uiViewController: ViewControllerWrapper.UIViewControllerType, context: UIViewControllerRepresentableContext<ViewControllerWrapper>) {
+        //
+    }
+}
+

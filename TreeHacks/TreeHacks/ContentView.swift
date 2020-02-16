@@ -12,37 +12,13 @@ struct ContentView: View {
     @State private var selection = 0
  
     var body: some View {
-//        TabView(selection: $selection){
-//            Home()
-//            .tabItem {
-//                    Image("home")
-//                    Text("Home")
-//            }
-//            RealTime()
-//            .tabItem {
-//                    Image("ar")
-//                    Text("Live")
-//            }
-//            Search()
-//            .tabItem {
-//                    Image("search")
-//                    Text("Search")
-//            }
-//            Recs()
-//            .tabItem {
-//                    Image("recc")
-//                    Text("Reccs")
-//            }
-//
-//        }//End of TabView
-        
         TabView {
             Home()
                 .tabItem {
                     Image("home")
                     Text("Home")
                 }
-            Search()
+            Trends()
                 .tabItem {
                     Image("search")
                     Text("Search")
