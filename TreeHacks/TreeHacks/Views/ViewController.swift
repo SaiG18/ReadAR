@@ -14,7 +14,10 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     
     @objc func handleTap(_ gestureRecognize: UIGestureRecognizer) {
         // retrieve the SCNView
-        let sceneView = self.sceneView as! SCNView
+        let sceneView = self.sceneView!
+        
+        sceneView.translatesAutoresizingMaskIntoConstraints = false
+        
 
         // check what nodes are tapped
         let p = gestureRecognize.location(in: sceneView)
@@ -47,11 +50,11 @@ class ViewController: UIViewController, ARSCNViewDelegate {
 
             let planeNode = SCNNode(geometry: plane)
             planeNode.position = SCNVector3(CGFloat( minVec.x) + CGFloat(bound.x) / 2 ,
-                                            CGFloat( minVec.y) + CGFloat(bound.y) / 2,CGFloat(minVec.z - 0.01))
+                                            CGFloat( minVec.y) + CGFloat(bound.y) / 2,CGFloat(minVec.z + 0.01))
 
             textNode.addChildNode(planeNode)
             planeNode.name = "text"
-            sceneView.scene!.rootNode.addChildNode(textNode)
+            sceneView.scene.rootNode.addChildNode(textNode)
             sceneView.autoenablesDefaultLighting = true
         }
     }
@@ -60,12 +63,13 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         super.viewDidLoad()
         
         sceneView = ARSCNView()
+        view.addSubview(sceneView)
         self.view.addSubview(sceneView)
         
         sceneView.translatesAutoresizingMaskIntoConstraints = false
         sceneView.topAnchor.constraint(equalTo: self.view.topAnchor).isActive = true
-        sceneView.leftAnchor.constraint(equalTo: self.view.leftAnchor).isActive = true
-        sceneView.rightAnchor.constraint(equalTo: self.view.rightAnchor).isActive = true
+        sceneView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor).isActive = true
+        sceneView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor).isActive = true
         sceneView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
 
         

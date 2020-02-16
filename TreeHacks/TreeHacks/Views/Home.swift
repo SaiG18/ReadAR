@@ -10,13 +10,7 @@ import SwiftUI
 
 struct Home: View {
     var body: some View {
-        ZStack{
-            ViewControllerWrapper()
-        }
-        .edgesIgnoringSafeArea(.all)
-        .navigationBarTitle("")
-        .navigationBarHidden(true)
-        .navigationBarBackButtonHidden(true)
+        ViewControllerWrapper()
     }
 }
 
