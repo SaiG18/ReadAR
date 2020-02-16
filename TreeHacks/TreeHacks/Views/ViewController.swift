@@ -83,9 +83,9 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         sceneView.showsStatistics = false
                 
         // Create a new scene
-        let scene = SCNScene(named: "../art.scnassets/Lowpoly_tree_sample")!
-        self.treeNode = scene.rootNode.childNode(withName: "Tree_lp_11", recursively: true)
-        self.treeNode?.position = SCNVector3Make(0, 0, -1)
+        let scene = SCNScene(named: "../art.scnassets/Dot.scn")!
+        self.treeNode = scene.rootNode.childNode(withName: "sphere", recursively: true)
+        self.treeNode?.position = SCNVector3Make(0, 0, -25)
         
         // Set the scene to the view
         sceneView.scene = scene
