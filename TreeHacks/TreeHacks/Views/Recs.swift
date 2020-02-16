@@ -12,18 +12,28 @@ struct Recs: View {
     var body: some View {
         VStack {
             HStack {
-                Card(image: "river_bank", category: "Card", heading: "Bank", author: "test", videoUrlString: "https://www.youtube.com/watch?v=HobxLbPhrMc")
+                Card(image: "Work", category: "Physics",
+                     heading: "Work",
+                     videoUrlString: "https://www.youtube.com/watch?v=2WS1sG9fhOk")
                 
-                Card(image: "river_bank", category: "Card", heading: "Bank", author: "test", videoUrlString: "https://www.youtube.com/watch?v=HobxLbPhrMc")
+                 Card(image: "Supply", category: "Economics", heading: "Supply", videoUrlString: "https://www.youtube.com/watch?v=nKvrbOq1OfI")
             }
             
             HStack {
-                Card(image: "river_bank", category: "Card", heading: "Bank", author: "test", videoUrlString: "https://www.youtube.com/watch?v=HobxLbPhrMc")
+                Card(image: "Tax", category: "Economics", heading: "Tax", videoUrlString: "https://www.youtube.com/watch?v=9gwTH4Yme8I")
                 
-                Card(image: "river_bank", category: "Card", heading: "Bank", author: "test", videoUrlString: "https://www.youtube.com/watch?v=HobxLbPhrMc")
+                Card(image: "Tension", category: "Physics", heading: "Tension", videoUrlString: "https://www.youtube.com/watch?v=_UrfHFEBIpU")
+                
             }
+            
+            HStack {
+                Card(image: "Force", category: "Physics", heading: "Force", videoUrlString: "https://www.youtube.com/watch?v=MaabUHLIIXA")
+                
+                Card(image: "GDP", category: "Economics", heading: "GDP", videoUrlString: "https://www.youtube.com/watch?v=BnrBRuoVefY")
+            }
+            
         }
-        .padding(.bottom, 260)
+        .padding(.bottom, 100)
     }
 }
 

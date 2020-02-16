@@ -12,7 +12,6 @@ struct Card: View {
     var image: String
     var category: String
     var heading: String
-    var author: String
     var videoUrlString: String
     
     @State var showVideo = false
@@ -22,7 +21,7 @@ struct Card: View {
            VStack {
                Image(image)
                    .resizable()
-                   .aspectRatio(contentMode: .fit)
+                .aspectRatio(contentMode: .fit)
             
                HStack {
                    VStack(alignment: .leading) {
@@ -34,9 +33,6 @@ struct Card: View {
                            .fontWeight(.black)
                            .foregroundColor(.primary)
                            .lineLimit(3)
-                       Text(author.uppercased())
-                           .font(.caption)
-                           .foregroundColor(.secondary)
                    }
                    .layoutPriority(100)
             
@@ -61,6 +57,6 @@ struct Card: View {
 
 struct Card_Previews: PreviewProvider {
     static var previews: some View {
-        Card(image: "river_bank", category: "Test", heading: "Title", author: "Sophie", videoUrlString: "https://www.youtube.com/watch?v=HobxLbPhrMc")
+        Card(image: "Supply", category: "Test", heading: "Title", videoUrlString: "https://www.youtube.com/watch?v=HobxLbPhrMc")
     }
 }
