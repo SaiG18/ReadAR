@@ -8,7 +8,9 @@
 import UIKit
 import SceneKit
 import ARKit
-class ViewController: UIViewController, ARSCNViewDelegate {
+import Alamofire
+
+class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate {
     var treeNode: SCNNode?
     var sceneView: ARSCNView!
     
@@ -74,13 +76,6 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         sceneView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor).isActive = true
         sceneView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor).isActive = true
         sceneView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
-
-        
-        // Set the view's delegate
-        sceneView.delegate = self
-        
-        // Show statistics such as fps and timing information
-        sceneView.showsStatistics = false
                 
         // Create a new scene
         let scene = SCNScene(named: "../art.scnassets/Dot.scn")!
@@ -96,6 +91,13 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        // Set the view's delegate
+        sceneView.delegate = self
+        sceneView.session.delegate = self
+        
+        // Show statistics such as fps and timing information
+        sceneView.showsStatistics = false
         
         // Create a session configuration
         let configuration = ARWorldTrackingConfiguration()
@@ -128,5 +130,36 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     func sessionInterruptionEnded(_ session: ARSession) {
         // Reset tracking and/or remove existing anchors if consistent tracking is required
         
+    }
+    
+    func Post(imageOrVideo : UIImage?){
+        let headers: HTTPHeaders = [
+            /* "Authorization": "your_access_token",  in case you need authorization header */
+            "Content-type": "multipart/form-data"
+        ]
+            AF.upload(
+                multipartFormData: { multipartFormData in
+                    multipartFormData.append(imageOrVideo!.jpegData(compressionQuality: 0.5)!, withName: "image" , fileName: "file.jpeg", mimeType: "image/jpeg")
+            },
+                to: "http://140.238.147.73:8080/api", method: .post , headers: headers)
+                .response { resp in
+                    print(resp)
+            }
+    }
+    
+    fileprivate func apiCall(_ frame: ARFrame) {
+        let imageBuffer: CVPixelBuffer = frame.capturedImage
+        let ciimage : CIImage = CIImage(cvPixelBuffer: imageBuffer)
+        
+        let context:CIContext = CIContext.init(options: nil)
+        let cgImage:CGImage = context.createCGImage(ciimage, from: ciimage.extent)!
+        let image:UIImage = UIImage.init(cgImage: cgImage)
+        
+        Post(imageOrVideo: image)
+    }
+    
+    func session(_ session: ARSession, didUpdate frame: ARFrame) {
+        print("Called the api!!")
+        apiCall(frame)
     }
 }
