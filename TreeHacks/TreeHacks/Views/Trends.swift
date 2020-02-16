@@ -9,21 +9,20 @@
 import SwiftUI
 
 struct Trends: View {
+    
+    var items = ["TrendsTop", "TrendsBottom"]
+                 
     var body: some View {
-        ZStack{
-            Color(red: 242/255, green: 244/255, blue: 252/255)
-            .edgesIgnoringSafeArea(.all)
-            VStack{
-                Image("TrendsTop")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .edgesIgnoringSafeArea(.all)
+    
+        ScrollView(Axis.Set.vertical, showsIndicators: true) {
+            VStack {
+                ForEach(self.items, id: \.self) { item in
+                    Image(item)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                }
             }
         }
-        .edgesIgnoringSafeArea(.all)
-        .navigationBarTitle("")
-        .navigationBarHidden(true)
-        .navigationBarBackButtonHidden(true)
     }
 }
 
