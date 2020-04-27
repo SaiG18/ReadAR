@@ -1,4 +1,4 @@
-## readAR - Augmented Reality app
+## ReadAR - Augmented Reality app
 
 readAR: An interactive and seamless way to perceive content for students and individuals with learning disabilities.
 
