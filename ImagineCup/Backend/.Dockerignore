@@ -1,0 +1,4 @@
+data/
+.DS_Store
+BERT_Model.py
+__pycache__
