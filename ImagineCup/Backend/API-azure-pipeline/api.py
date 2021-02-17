@@ -18,7 +18,7 @@ def handle_request():
     imagefile = request.files['image']
 
     # azure ocr
-    headers = {'Ocp-Apim-Subscription-Key': 'cf58dd90966a443eb07bf720bef831ed',
+    headers = {'Ocp-Apim-Subscription-Key': '<ADD API KEY>',
                'Content-Type': 'application/octet-stream', }
     r = requests.post(AZURE_OCR, headers=headers, data=imagefile)
 
@@ -51,7 +51,7 @@ def handle_request():
                         "text": tmpLine})
 
     # get keywords
-    headers = {'Ocp-Apim-Subscription-Key': 'e499e8daa7ea4f609e0dc5772771cea8'}
+    headers = {'Ocp-Apim-Subscription-Key':  '<ADD API KEY>'}
     payload = {"documents": allText}
     r = requests.post(AZURE_TEXT_ANALYTICS, headers=headers, json=payload)
     text_preds = r.json()
@@ -64,7 +64,7 @@ def handle_request():
         return jsonify({'ocr': [], 'image-urls': []}), 200
 
     imgurls = []
-    headers = {'Ocp-Apim-Subscription-Key': '7bfd359d42614c3888bbb25998062080'}
+    headers = {'Ocp-Apim-Subscription-Key':  '<ADD API KEY>'}
 
     for sentence in allSimplified:
         if (sentence.replace(" ", "+") != ''):
